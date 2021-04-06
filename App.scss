@@ -1,0 +1,71 @@
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/container.sass';
+@import '../node_modules/bulma/sass/elements/title.sass';
+
+html {
+  font-size: 20px;
+  background: lightcyan;
+}
+
+.navbar {
+  padding: 10px;;
+  background: lightcyan;
+}
+
+.card:hover{
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 85%;
+  padding: 40px;
+  ;
+}
+
+.rating {
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  color: #888888;
+  font-size: 25px;
+  height: 25px;
+  width: auto;
+  margin: 0;
+  position: relative;
+  padding: 0;
+}
+
+.rating-upper {
+  color: #c52b2f;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.rating-lower {
+  padding: 0;
+  display: flex;
+  z-index: 0;
+}
+
+.form {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1408px) {
+  .container:not(.is-max-desktop):not(.is-max-widescreen) {
+      max-width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .container:not(.is-max-desktop) {
+      max-width: 900px;
+  }
+}
